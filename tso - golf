@@ -1,0 +1,132 @@
+Last login: Mon Sep 19 21:17:39 on ttys000
+ GA General Assembly  Web Development Immersive 
+------------------------------------------
+git version 2.10.0
+Homebrew 0.9.9 (git revision 3ffb; last commit 2016-09-19) Homebrew/homebrew-core (git revision 128e; last commit 2016-09-19)
+ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-darwin15]
+node v6.6.0
+psql (PostgreSQL) 9.5.4
+------------------------------------------
+type unwelcome to remove this message
+seanmartinlewis ~
+$ cd ~/code/wdi/homework/cli_golf/kitchen/
+seanmartinlewis ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ ls
+cans.txt  fridge/  pantry/
+seanmartinlewis ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+6 directories, 15 files
+seanmartinlewis ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ mv fridge/trashcan/sink/ ~/code/wdi/homework/cli_golf/kitchen/ && mv fridge/trashcan/ ~/code/wdi/homework/cli_golf/kitchen/ && mv pantry/crisper-drawer/ fridge/
+'fridge/trashcan/sink/' -> '/Users/seanmartinlewis/code/wdi/homework/cli_golf/kitchen/sink'
+'fridge/trashcan/' -> '/Users/seanmartinlewis/code/wdi/homework/cli_golf/kitchen/trashcan'
+'pantry/crisper-drawer/' -> 'fridge/crisper-drawer'
+seanmartinlewis ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── crisper-drawer
+│   │   └── lettuce.txt
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── clean-dishes.txt
+│   ├── delete-me.txt
+│   └── dirty-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+6 directories, 15 files
+seanmartinlewis ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ rm cans.txt rm fridge/diapers.txt fridge/freezer/couch.txt sink/delete-me.txt sink/clean-dishes.txt && mkdir sink/drying-rack && touch cans.txt sink/drying-rack/clean-dishes.txt
+removed 'cans.txt'
+grm: cannot remove 'rm': No such file or directory
+removed 'fridge/diapers.txt'
+removed 'fridge/freezer/couch.txt'
+removed 'sink/delete-me.txt'
+removed 'sink/clean-dishes.txt'
+seanmartinlewis ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   └── dirty-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+6 directories, 10 files
+seanmartinlewis ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ mkdir sink/drying-rack
+gmkdir: created directory 'sink/drying-rack'
+seanmartinlewis ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ touch sink/drying-rack/clean-dishes.txt fridge/crisper-drawer/apples.txt
+seanmartinlewis ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+seanmartinlewis ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ 
